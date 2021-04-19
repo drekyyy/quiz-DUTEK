@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    /* --hue: var(--hue-neutral); */
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('schoolboy-using-lab-equipment-laboratory-education-PUA2L4F.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    /* background-color: hsl(var(--hue), 100%, 20%); */
+}
+
+/* body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+} */
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    /* border-radius: 1px; */
+    padding: 0 0 0 0;
+    box-shadow: 0 0 10px 2px;
+}
+
+.actual-question-container{
+    
+    width: 100%;
+    /* height:20px; */
+    background-color:darkblue;
+    display:flex;
+    flex-direction:column;
+
+}
+
+ .question{
+    text-align:center;
+    padding:5px;
+    width: 100%;
+    color:white;
+} 
+.correctAnswerCount{
+    padding:5px;
+    justify-content:flex-end;
+    color:white;
+    
+
+}
+
+.img-container{
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+}
+img{
+    width:100%; 
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 0px;
+    padding: 5px 10px;
+    margin:5px;
+    color: white;
+    outline: none;
+    font-size: 1.1rem
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+

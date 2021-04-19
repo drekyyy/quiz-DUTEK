@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+    <script defer src="script.js"></script>
+    <title> DUTEK Quiz app</title>
+    <!-- https://www.youtube.com/watch?v=riDzcEQbX6k -->
+</head>
+
+<body>
+    <div class="container" id='container'>
+        <div id="question-container" class="hide"> <!-- quiz container-->
+            <div class="actual-question-container">
+                <div id="correctAnswerCount" class="correctAnswerCount" ></div>
+                <div id="question" class="question">Question</div>       
+            </div>
+            <div id="img-container">
+                <div id="img1"></div>
+                <div id="img2"></div>
+                <div id="img3"></div>
+                <div id="img4"></div>
+            </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+</body>
+
+</html>
